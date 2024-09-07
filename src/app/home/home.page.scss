@@ -1,0 +1,46 @@
+.title-header{
+  margin-bottom:50px; /* deixa um espaço entre o header e o card*/
+  }
+.profile-card {
+  max-width: 400px; /* largura máxima do card */
+  margin: 0 auto; /* Centraliza o card horizontalmente */
+  padding: 16px; /* Adiciona um padding interno */
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-img {
+  width: 120px; /* Ajusta a largura da imagem */
+  height: 120px; /* Ajusta a altura da imagem */
+  border-radius: 50%; /* Faz a imagem ficar circular */
+  object-fit: cover; /* Ajusta a imagem para cobrir o espaço disponível */
+  margin-bottom: 8px; /* deixa um espaço abaixo da imagem */
+}
+
+.profile-name {
+  font-size: 1.5em; /* Ajusta o tamanho da fonte do nome */
+}
+
+.profile-content {
+  font-size: 1em; /* Ajusta o tamanho da fonte do conteúdo */
+  text-align: center; /* Centraliza o texto do conteúdo */
+}
+@media (max-width: 600px) {
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-name {
+    font-size: 1.2em;
+  }
+
+  .profile-content {
+    font-size: 0.9em;
+  }
+}
