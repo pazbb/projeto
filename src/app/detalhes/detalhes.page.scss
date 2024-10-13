@@ -1,0 +1,39 @@
+.page-detalhes {
+    ion-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%; /* Garante que o conteúdo ocupe 100% da altura da tela */
+      background-color: #f8f8f8; /* Fundo suave */
+      padding: 16px;
+    }
+  
+    .aluno-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  
+      ion-avatar {
+        margin-bottom: 20px;
+        img {
+          border-radius: 50%;
+          border: 3px solid #3880ff; /* Borda azul ao redor da imagem */
+          width: 150px; /* Tamanho da imagem */
+          height: 150px;
+        }
+      }
+  
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #222;
+      }
+  
+      p {
+        font-size: 18px;
+        color: #666;
+        margin: 4px 0;
+      }
+    }
+}

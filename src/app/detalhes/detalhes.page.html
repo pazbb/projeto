@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="voltar()">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Detalhes do Aluno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="aluno-details" *ngIf="aluno">
+    <ion-avatar>
+      <img [src]="aluno?.fotoUrl" />
+    </ion-avatar>
+    <h2>{{ aluno?.nome }}</h2>
+    <p>Turno: {{ aluno?.turno }}</p>
+    <p>Unidade: {{ aluno?.unidade }}</p>
+  </div>
+</ion-content>
